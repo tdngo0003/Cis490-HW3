@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">PaperRockScissors</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="Versus">VS</string>
+    <string name="PaperRockScissors">Rock, Paper, Scissors!</string>
+    <string name="User">User</string>
+    <string name="Android">Android</string>
+    <string name="Computer">Computer</string>
+    <string name="VS">VS</string>
+    <string name="Player">Player</string>
+
+</resources>

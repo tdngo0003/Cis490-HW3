@@ -1,0 +1,106 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".PaperRockScissors">
+
+    <TextView
+        android:text="Rock, Paper, Scissors!"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/title"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        tools:context=".RockPaperScissors"
+        android:singleLine="false" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonRock"
+        android:background="@drawable/rock1"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/imageViewAnswerUser"
+        android:layout_alignStart="@+id/imageViewAnswerUser" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonPaper"
+        android:background="@drawable/paper1"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/title"
+        android:layout_alignStart="@+id/title" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonScissors"
+        android:layout_alignBaseline="@+id/buttonPaper"
+        android:layout_alignBottom="@+id/buttonPaper"
+        android:layout_marginLeft="23dp"
+        android:layout_toRightOf="@+id/title"
+        android:background="@drawable/scissors1" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageViewAnswerUser"
+        android:background="@drawable/human1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="45dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageViewAnswerAndroid"
+        android:background="@drawable/computer1"
+        android:layout_toEndOf="@+id/buttonPaper"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/buttonScissors"
+        android:layout_alignStart="@+id/buttonScissors" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Computer"
+        android:textSize="22sp"
+        android:gravity="center"
+        android:textColor="@android:color/holo_red_dark"
+        android:layout_toEndOf="@+id/buttonPaper"
+        android:autoText="false"
+        android:layout_below="@+id/imageViewAnswerAndroid"
+        android:layout_alignLeft="@+id/imageViewAnswerAndroid"
+        android:layout_alignStart="@+id/imageViewAnswerAndroid"
+        android:layout_alignRight="@+id/imageViewAnswerAndroid"
+        android:layout_alignEnd="@+id/imageViewAnswerAndroid" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Player"
+        android:textSize="22sp"
+        android:gravity="center"
+        android:textColor="@android:color/holo_red_dark"
+        android:autoText="false"
+        android:layout_alignRight="@+id/imageViewAnswerUser"
+        android:layout_alignEnd="@+id/imageViewAnswerUser"
+        android:layout_below="@+id/imageViewAnswerUser"
+        android:layout_alignLeft="@+id/imageViewAnswerUser"
+        android:layout_alignStart="@+id/imageViewAnswerUser" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Versus"
+        android:textSize="25sp"
+        android:gravity="center"
+        android:autoText="false"
+        android:layout_below="@+id/imageViewAnswerAndroid" />
+
+</RelativeLayout>
